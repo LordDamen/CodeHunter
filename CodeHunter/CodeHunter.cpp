@@ -32,10 +32,12 @@ int main()
 			textToAnalyze[i] == 'E' || textToAnalyze[i] == 'I' || textToAnalyze[i] == 'O' ||
 			textToAnalyze[i] == 'U')
 		{
+			//This was subtracting instead of adding
 			++vowels;
 		}
 		else if ((textToAnalyze[i] >= 'a'&& textToAnalyze[i] <= 'z') || (textToAnalyze[i] >= 'A'&& textToAnalyze[i] <= 'Z'))
 		{
+			// This line was commented out
 			++consonants;
 		}
 		else if (textToAnalyze[i] >= '0' && textToAnalyze[i] <= '9')
